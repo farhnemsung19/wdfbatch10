@@ -1,0 +1,150 @@
+.circle1,.circle2,.circle3,.circle4,.circle5{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.circle1{
+	background: conic-gradient(yellow,red,green,pink);
+}
+
+.circle2{
+	background: conic-gradient(#9534eb, #eb34cc, #ebb434, #8334eb);
+
+}
+
+.circle3{
+	background: conic-gradient(rgba(25, 220, 200, 0.95),rgba(25, 220, 22, 0.42),rgba(144, 65, 22, 0.42),rgba(124, 47, 45, 0.98));
+}
+
+.circle4{
+	background: conic-gradient(
+		hsla(64, 87%, 75%, 0.54),
+		hsla(258, 93%, 74%, 0.54),
+		hsla(306, 93%, 74%, 0.51),
+		hsla(71, 21%, 25%, 0.29));
+}
+
+.circle5{
+	background: conic-gradient(
+		yellow 40%,
+		red 0% 50%,
+		green 0% 80%,
+		pink 0% 30%);
+}
+
+.circle6{
+
+	width: 200px;
+	height: 200px;
+	
+	background: linear-gradient(
+		red 10%,
+		blue 0% 20%,
+		yellow 0% 40%,
+		purple 0% 40%
+
+	)	;
+
+}
+
+.boxone{
+	width: 600px;
+	height: 300px;
+	background: green;
+
+	display: flex;
+	/*	hz center*/
+	justify-content: center;
+	/*	vt center*/
+	align-items: center;
+
+/*	Only for single element*/
+	/*display: grid;
+	place-items: center;*/
+
+	position: relative;
+}
+
+
+.boxone .div1{
+	width: 300px;
+	height: 300px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 50%;
+
+	position: absolute;
+	/*left: 0;
+	top: 0;*/
+
+	z-index: 2;
+}
+
+.boxone .div2{
+	width: 320px;
+	height: 320px;
+/*	background-color: steelblue;*/
+	background: conic-gradient(
+		red,
+		violet 30%,
+		red 0%,
+		blue 70%,
+		red 0%,
+		yellow 100%
+	);
+
+	color: #fff;
+	border-radius: 50%;
+
+	position: absolute;
+	
+	z-index: 1;
+}
+
+.pointercontainer{
+	width: 20px;
+	height: 200px;
+/*	background-color: gray;*/
+	
+	position: absolute;
+	top: -50px;
+
+	z-index: 3;
+
+	animation-name: myani;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	transform-origin: bottom;
+
+}
+
+.pointer{
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	border-radius: 50%;
+
+	display: block;
+}
+
+@keyframes myani{
+	/*from{
+		transform: rotate(0deg);
+	}
+
+	to{
+		transform: rotate(360deg);
+	}*/
+
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(-2turn);
+	}
+}
+

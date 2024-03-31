@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>String Method</title>
+	</head>
+
+	<body>
+		
+		<script type="text/javascript">
+			
+			let firstname = "Myan Hnin ";
+			let lastname = "Yee Lwin ";
+
+			console.log(firstname);
+			console.log(lastname);
+			console.log(firstname,lastname);
+			console.log(firstname.length);
+
+			//Concat(+)
+			let fullname = firstname + lastname;
+			console.log(fullname);
+
+			// =>string.concat(string)
+
+			console.log(firstname.concat(lastname));
+			console.log(lastname.concat(firstname));
+
+			// Append (+=)
+
+			let name1 = "Honey Nway ";
+			let name2 = "Oo";
+
+			console.log(name1+name2);
+			console.log(name1.concat(name2));
+
+			name1 += name2;
+			console.log(name1);
+
+			let num1 = 10;
+			let num2 = 20;
+
+			num1 = num1;
+			console.log(num1);
+
+			num1 = num1+num2;
+			console.log(num1);
+
+			num1 += num2;
+			console.log(num1);
+
+			//String is Character Array in js
+
+			let myfriend = "Aung Ko Ko";
+
+			console.log(myfriend);
+			console.log(typeof myfriend);
+			console.log(myfriend.length);
+
+			console.log(myfriend[0]);
+			console.log(myfriend[3]);
+			console.log(myfriend[3]);
+			console.log(typeof myfriend[3]);
+			console.log(myfriend[myfriend.length-1]);
+
+			//charAt()
+			const nickname = "Aung Kyaw Kyaw";
+			console.log(nickname[5]); //K
+			console.log(nickname.charAt(5)); //K
+			console.log(nickname.charAt(nickname.length-1)); //w
+
+			// includes()
+			let favcolor = "My fav color is black color";
+			console.log(favcolor.includes("black")); //true
+			console.log(favcolor.includes("red")); //false
+			console.log(favcolor.includes("Black")); //flase
+			console.log(favcolor.includes("BLACK")); //false
+			console.log(favcolor.includes("bla")); //true
+
+			// replace(old,new)
+
+			console.log(favcolor.replace("black", "red"));
+			console.log(favcolor.replace("Black", "red"));
+			console.log(favcolor.replace("BLACK", "red"));
+			console.log(favcolor.replace("bla", "red"));
+			console.log(favcolor.replace("color", "colour"));
+
+			// substring (index, lenth)
+
+			console.log(favcolor.substring(0,10)+"...");
+			console.log(favcolor.substring(0,10).concat('---------'));
+
+			// change Case
+
+			console.log(favcolor.toLowerCase());
+			console.log(favcolor.toUpperCase());
+
+
+		</script>
+
+	</body>
+</html>

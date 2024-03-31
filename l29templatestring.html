@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Template String</title>
+	</head>
+	<body>
+
+		<ul>
+			<li>Name : Aung Aung</li>
+			<li>Age : 25</li>
+			<li>Job : Web Developer</li>
+			<li>City : Mandalay</li>
+
+		</ul>
+
+		<input type="text" name="" placeholder="Enter your phone number" />
+		
+
+
+
+
+		<script type="text/javascript">
+			
+			//var fullname = "aung aung"; 
+			//let fullname;
+			//fullname = "aung aung"; //aung aung
+			//const fullname; //error
+
+			// console.log(fullname);
+
+			const name = "Honey Nway Oo";
+			const age = 23;
+			const job = "Model";
+			const city = "Yangon";
+
+			let myliststyle;
+			console.log(myliststyle); //underfined
+
+			//myliststyle ="<h1>Hello World</h1>";
+			//myliststyle = "<h1>Hello Global</h2>"
+
+			console.log(myliststyle);  //<h1>Hello Global</h2>
+
+			document.write(myliststyle); // Hello Global
+
+			//Without Templete String
+			myliststyle = "<ul>"+
+							"<li>Name : "+name+"</li>"+
+							"<li>Age : "+age+"</li>"+
+							"<li>Job : "+job+"</li>"+
+							"<li>City : "+city+"</li>"+
+							"</ul";
+
+			document.write(myliststyle);
+
+			//Without Template String(``)
+
+			myliststyle = `<ul>
+								<li>Name : ${name}</li>
+								<li>Age : ${age}</li>
+								<li>Job : ${job}</li>
+								<li>City : ${city}</li>
+							</ul>`;
+
+			document.write(myliststyle);
+
+
+
+
+
+
+
+
+
+		</script>
+
+
+
+
+	</body>
+</html>

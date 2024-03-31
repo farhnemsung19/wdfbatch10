@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Array Method</title>
+	</head>
+
+	<body>
+		
+		<script type="text/javascript">
+			
+			let arrcolors = ["red", "green", "blue", "white", "black", "pink"];
+
+			console.log(arrcolors);
+			console.log(arrcolors.length);
+			console.log(arrcolors[3]);
+
+			// indexOf(value)
+			console.log(arrcolors.indexOf("black"));
+			console.log(arrcolors.indexOf("Black"));
+			console.log(arrcolors.indexOf("orange"));
+
+			const name = "aung aung";
+			console.log(Array.isArray(name)); //false
+			console.log(Array.isArray(arrcolors)); //true
+
+
+			// join ('delimitor')
+
+			console.log(String(arrcolors));
+			console.log(arrcolors.toString());
+			console.log(arrcolors.join());
+			console.log(arrcolors.join(""));
+			console.log(arrcolors.join(" "));
+			console.log(arrcolors.join("-"));
+
+
+			const candys = ["red", "green", "blue", "white", "black"];
+			candys[5] = "pink";
+			candys[1] = "skyblue";
+
+			console.log(candys);
+			console.log(candys.length);
+
+			// push(value)
+
+			candys.push("orange");
+			candys.push("gold");
+			candys.push("violet", "gray");
+
+			console.log(candys);
+			console.log(candys.length);
+
+			// unshift(value)
+
+			candys.unshift("tomato");
+			candys.unshift("silver", "steelblue")
+
+			console.log(candys);
+			console.log(candys.length);
+
+			// shift() Note:: Remove value & index (take off from front)
+
+			candys.shift();
+			candys.shift();
+
+			console.log(candys);
+			console.log(candys.length);
+
+			// pop() Note: : Remove value & index (take off from end) 
+
+			candys.pop();
+			candys.pop();
+
+			console.log(candys);
+			console.log(candys.length);
+
+			// delete (Remove only value)
+
+			delete candys[1];
+			delete candys[5];
+
+			console.log(candys);
+			console.log(candys.length);
+
+			// splice(index,length)
+
+			const paints = candys.splice(0,5);
+			console.log(paints);
+
+			// concat ()
+
+			const arr1 = ["aung aung", "maung maung", "tun tun", "kyaw kyaw"];
+
+			const arr2 = ["su su", "nu nu", "yu yu", "lue lue"];
+			const arr3 = [10,20];
+
+			console.log(arr1+arr2);
+			console.log(arr1.concat(arr2));
+			console.log(arr3.concat(arr2));
+
+			// sort() A to Z
+
+			const combinearrs = arr1.concat(arr2);
+			console.log(combinearrs);
+			console.log(combinearrs[0]);
+			console.log(combinearrs[4]);
+
+			console.log(combinearrs.sort());
+			console.log(combinearrs[0]);
+			console.log(combinearrs[4]);
+
+
+			//reverse() Note: reverse can't set Z to a, it's just reverse
+			console.log(combinearrs.reverse());
+
+
+			const arrnumbers = [200,700,300,100,30,50,150,11,10,8,9,5,600,400,250,360];
+
+			console.log(arrnumbers);
+			console.log(arrnumbers.sort());
+			console.log(arrnumbers.reverse());
+
+
+
+			// to be continue (after Function)
+
+			// callback function
+
+			console.log(arrnumbers.sort(function(a,b){
+				//return a-b; // 0 to 1 2 3
+				return b-a; // ...3 2 1 to 0
+			}))
+
+
+
+		</script>
+
+	</body>
+</html>
